@@ -71,5 +71,16 @@
 - [原型文档下载区](https://gitee.com/NFUNM069/prototype)
 
 #### 交互及界面设计
-- 登录界面
+- **登录界面**
+   - 用户登录时所看到的界面
 ![登录页面](https://github.com/PL728329/API_ML_AI_garbage_sorting/blob/master/images/%E7%99%BB%E5%BD%95%E9%A1%B5%E9%9D%A2.png)
+
+- **个人页面**
+   - app内的个人模块
+![个人页面]https://github.com/PL728329/API_ML_AI_garbage_sorting/blob/master/images/%E4%B8%AA%E4%BA%BA%E9%A1%B5%E9%9D%A2.png)
+
+- **分类识别页面**
+   - 用户在此处可根据自己的需求选择识别类型
+![分类识别页面](https://github.com/PL728329/API_ML_AI_garbage_sorting/blob/master/images/%E5%88%86%E7%B1%BB%E8%AF%86%E5%88%AB%E9%A1%B5%E9%9D%A2.png)
+
+
