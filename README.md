@@ -69,4 +69,7 @@
 ## （九）使用者交互与设计（axure产品原型）
 - [原型文档展示](http://nfunm069.gitee.io/prototype)
 - [原型文档下载区](https://gitee.com/NFUNM069/prototype)
-## （十）产品/功能/信息/流程结构图
+
+#### 交互及界面设计
+- 登录界面
+![登录页面](https://github.com/PL728329/API_ML_AI_garbage_sorting/blob/master/images/%E7%99%BB%E5%BD%95%E9%A1%B5%E9%9D%A2.png)
