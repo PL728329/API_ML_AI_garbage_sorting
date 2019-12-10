@@ -49,15 +49,13 @@
 - 场景二：部分人群垃圾分类错误，环卫工人在处理垃圾时需重新分类，增加环卫工人工作量。
 - 场景三：部分人不理解垃圾分类的必要性，比较排斥，给垃圾分类的普及与推行增加难度。
 
-## （八）人工智能概率性
-
-
-## （九）需求列表与人工智能API
+## （八）需求列表与人工智能API
 
 | 用户案例 | 对应功能 | 重要程度 |
 :---:|:---:|:---:|
-| 用户想快速分辨手中的垃圾为何类型 | 垃圾分类识别功能 | 重要 |
-| 用户想得到垃圾分类投放建议 | 垃圾分类识别功能 | 重要 |
+| 用户想快速分辨手中的垃圾为何类型 | 京东-垃圾分类识别功能 | 重要 |
+| 用户想得到垃圾分类投放建议 | 京东-垃圾分类识别功能 | 重要 |
+| 用户使用app时希望能更精准进行识别 | 百度- | 次重要 |
 | 用户想了解一些垃圾分类小常识 | 科普功能 | 次重要 |
 
 ### 具体应用场景
@@ -68,7 +66,7 @@
 - 场景三：小海的父亲是个老顽固，对最近推行的垃圾分类政策十分不满，认为没有必要，也不愿意去学习如何进行垃圾分类。小海为此特地在父亲的手机上安装了“垃圾分分看”app，帮助父亲进行垃圾分类，一开始小海的父亲还对垃圾分类十分排斥，但在使用“垃圾分分看”app后，在其科普功能里面看了不少关于垃圾分类的知识后，逐渐就不那么排斥垃圾分类了。（科普功能）
 
 # 原型
-## （十）使用者交互与设计（axure产品原型）
+## （九）使用者交互与设计（axure产品原型）
 - [原型文档展示](http://nfunm069.gitee.io/prototype)
 - [原型文档下载区](https://gitee.com/NFUNM069/prototype)
 
@@ -105,5 +103,67 @@
 
 - **产品流程图**
 ![产品流程图](https://github.com/PL728329/API_ML_AI_garbage_sorting/blob/master/images/APP%E4%BA%A7%E5%93%81%E6%B5%81%E7%A8%8B%E5%9B%BE.png)
+
+## （十）API使用（使用水平）
+1. 京东人工智能开放平台-垃圾分类识别api
+- 接口描述：垃圾分类识别API可用于解决令人头疼的垃圾分类问题。基于京东AI庞大商品识别能力进行拓展，提供数亿种生活垃圾的辨识和分类建议，支持多模态（图片、文字、语音）搜索，支持快速场景搭建。
+- **图片识别**
+- 接口地址：https://aiapi.jd.com/jdai/garbageVoiceSearch
+- 请求方式:https post postaiapi.jd.com/jdai/garbageImageSearch
+- 输入：
+```
+#!/usr/bin/python
+# -*- coding: utf-8 -*-
+# 本代码仅供参考，请根据实际情况进行调整
+import wx_sdk
+
+url = 'https://aiapi.jd.com/jdai/garbageImageSearch'
+bodyStr = '{ 	"cityId":"310000", 	"imgBase64":"XXXXXX"}' #body中的内容
+params = { 
+    'appkey' : '38981eb926e28ef6d229284ebd2939bb',
+    'secretkey' : 'your secretKey'
+}
+
+response = wx_sdk.wx_post_req( url, params, bodyStr=bodyStr )
+print( response.text )
+
+```
+- 输出：
+```
+Status Code: 200
+Time：1262ms
+Date：Tue 10 Dec 2019 17:24:16 GMT
+Body：
+{
+    "code": "10000",
+    "charge": true,
+    "remain": 4997,
+    "remainTimes": 4997,
+    "remainSeconds": -1,
+    "msg": "查询成功,扣费",
+    "result": {
+        "status": 0,
+        "message": "success",
+        "garbage_info": [
+            {
+                "cate_name": "湿垃圾",
+                "city_id": "310000",
+                "city_name": "上海市",
+                "confidence": 0.9550853795837226,
+                "garbage_name": "咖啡/奶茶",
+                "ps": "投放建议：容器与外包装为可回收物"
+            }
+        ]
+    }
+}
+```
+
+- 京东人工智能开放平台垃圾分类识别测试结果：
+
+- 单一物体识别：输入一张有关于饮料的照片，输出一个置信度最高的识别结果。
+![图片识别](https://github.com/PL728329/API_ML_AI_garbage_sorting/blob/master/images/%E5%A5%B6%E8%8C%B6-%E8%AF%86%E5%88%AB.png)
+
+## （十一）人工智能概率性
+
 
 
