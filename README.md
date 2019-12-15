@@ -72,36 +72,47 @@
 
 #### 交互及界面设计
 - **登录界面**-用户登录时所看到的界面
+
 ![登录页面](https://github.com/PL728329/API_ML_AI_garbage_sorting/blob/master/images/%E7%99%BB%E5%BD%95%E9%A1%B5%E9%9D%A2.png)
 
 - **个人页面**-app内的个人模块
+
 ![个人页面](https://github.com/PL728329/API_ML_AI_garbage_sorting/blob/master/images/%E4%B8%AA%E4%BA%BA%E9%A1%B5%E9%9D%A2.png)
 
 - **分类识别页面**-用户在此处可根据自己的需求选择识别类型
+
 ![分类识别页面](https://github.com/PL728329/API_ML_AI_garbage_sorting/blob/master/images/%E5%88%86%E7%B1%BB%E8%AF%86%E5%88%AB%E9%A1%B5%E9%9D%A2.png)
 
 - **分类识别页面-拍照识别**
+
 ![拍照识别](https://github.com/PL728329/API_ML_AI_garbage_sorting/blob/master/images/%E5%88%86%E7%B1%BB%E8%AF%86%E5%88%AB-%E6%8B%8D%E7%85%A7%E8%AF%86%E5%88%AB.png)
 
 - **分类识别页面-文本识别**
+
 ![文本识别](https://github.com/PL728329/API_ML_AI_garbage_sorting/blob/master/images/%E5%88%86%E7%B1%BB%E8%AF%86%E5%88%AB-%E6%96%87%E6%9C%AC%E8%AF%86%E5%88%AB.png)
 
 - **分类识别页面-语音识别**
+
 ![语音识别](https://github.com/PL728329/API_ML_AI_garbage_sorting/blob/master/images/%E5%88%86%E7%B1%BB%E8%AF%86%E5%88%AB-%E8%AF%AD%E9%9F%B3%E8%AF%86%E5%88%AB.png)
 
 - **科普知识页面**-用户可在此处查阅垃圾分类知识以及相关环保类科普文章
+
 ![科普知识页面](https://github.com/PL728329/API_ML_AI_garbage_sorting/blob/master/images/%E7%A7%91%E6%99%AE%E7%9F%A5%E8%AF%86%E9%A1%B5%E9%9D%A2.png)
 
 - **产品结构图**
+
 ![产品结构图](https://github.com/PL728329/API_ML_AI_garbage_sorting/blob/master/images/APP%E4%BA%A7%E5%93%81%E7%BB%93%E6%9E%84%E5%9B%BE.png)
 
 - **功能结构图**
+
 ![功能结构图](https://github.com/PL728329/API_ML_AI_garbage_sorting/blob/master/images/APP%E5%8A%9F%E8%83%BD%E7%BB%93%E6%9E%84%E5%9B%BE.png)
 
 - **信息结构图**
+
 ![信息结构图](https://github.com/PL728329/API_ML_AI_garbage_sorting/blob/master/images/APP%E4%BF%A1%E6%81%AF%E7%BB%93%E6%9E%84%E5%9B%BE.png)
 
 - **产品流程图**
+
 ![产品流程图](https://github.com/PL728329/API_ML_AI_garbage_sorting/blob/master/images/APP%E4%BA%A7%E5%93%81%E6%B5%81%E7%A8%8B%E5%9B%BE.png)
 
 ## （十）API使用（使用水平）
