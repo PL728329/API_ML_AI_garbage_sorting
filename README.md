@@ -67,8 +67,8 @@
 
 # 原型
 ## （九）使用者交互与设计（axure产品原型）
-- [原型文档展示](http://nfunm069.gitee.io/prototype)
-- [原型文档下载区](https://gitee.com/NFUNM069/prototype)
+- [原型文档展示](https://pl728329.github.io/api_prototype/#g=1&p=%E4%BA%A7%E5%93%81%E7%BB%93%E6%9E%84%E5%9B%BE)
+- [原型文档下载区](https://github.com/PL728329/api_prototype)
 
 #### 交互及界面设计
 - **登录界面**-用户登录时所看到的界面
