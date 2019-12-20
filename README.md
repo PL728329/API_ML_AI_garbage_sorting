@@ -173,15 +173,15 @@ Body：
 
 - 单一物体识别：输入一张有关于饮料的照片，输出一个置信度最高的识别结果。
 - 输入图片：
-
+![输入单一物体图片](https://github.com/PL728329/API_ML_AI_garbage_sorting/blob/master/images/1039f5750243da9e5755808882aa4b89.jpg)
 - 输出结果：
-![图片识别](https://github.com/PL728329/API_ML_AI_garbage_sorting/blob/master/images/%E5%A5%B6%E8%8C%B6-%E8%AF%86%E5%88%AB.png)
+![单一物体输出结果](https://github.com/PL728329/API_ML_AI_garbage_sorting/blob/master/images/%E5%A5%B6%E8%8C%B6-%E8%AF%86%E5%88%AB.png)
 
 - 多物体识别：输入一张包含多样物品的照片，输出一个置信度最高的识别结果。
 - 输入图片：
-
+![输入多物体图片](https://github.com/PL728329/API_ML_AI_garbage_sorting/blob/master/images/1369025_131058903000_2.jpg)
 - 输出结果：
-
+![多物体输出结果](https://github.com/PL728329/API_ML_AI_garbage_sorting/blob/master/images/%E9%87%8E%E9%A4%90-%E8%AF%86%E5%88%AB.png)
 - 多物体照片一样可以进行识别，只是置信度相对于单一物体来说下降不少。
 
 ---
@@ -322,6 +322,8 @@ if (content):
 }
 ```
 - 可回收垃圾分类识别测试结果：
+- [测试结果](http://nfunm069.gitee.io/icredit)
+
 
 #### 4.百度AI开放平台——图像主体检测api
 - 描述：检测出图片主体的坐标位置，可使用该接口裁剪出图像主体区域，配合图像识别接口提升识别精度。广泛适用于美图类app、辅助智能识图等业务场景中。
@@ -373,6 +375,10 @@ Content-Type: application/json;charset=UTF-8
 }
 ```
 - 图像主体检测识别测试结果：
+![测试结果](https://github.com/PL728329/API_ML_AI_garbage_sorting/blob/master/images/%E4%B8%BB%E4%BD%93%E6%A3%80%E6%B5%8B.png)
+
+- 图像主体检测测试代码：
+![图像主体检测测试代码](https://github.com/PL728329/API_ML_AI_garbage_sorting/blob/master/images/%E7%89%A9%E4%BD%93%E4%B8%BB%E4%BD%93%E6%A3%80%E6%B5%8B.png)
 
 ---
 ## （十一）API使用比较分析
@@ -417,11 +423,13 @@ Content-Type: application/json;charset=UTF-8
 - 垃圾分类api：
   1. 在图片杂物过多时，不能精准识别图内单独某个物品，各项置信度都很低，没办法进行垃圾分类识别；
 - 例子：
+![识别置信度低](https://github.com/PL728329/API_ML_AI_garbage_sorting/blob/master/images/%E8%B4%AD%E7%89%A9-%E8%AF%86%E5%88%AB.png)
 
 - 解决办法：运用图像主体检测api加以辅助，缩小识别范围，提高精确度。
 - 图像主体检测api：
   1. 图片内出现较多物体时，会存在无法检测主体的情况，可能会达不到预想的要求；
 - 例子：
+![主体检测](https://github.com/PL728329/API_ML_AI_garbage_sorting/blob/master/images/%E8%B4%AD%E7%89%A9-%E6%A3%80%E6%B5%8B.png)
 
 - 解决办法：暂时没找到解决办法，待定。
 
