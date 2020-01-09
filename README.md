@@ -7,6 +7,7 @@
 |项目所有人|彭海晴|
 |开发者|彭海晴|
 |测试者|彭海晴|
+- [20*20ppt文档下载](https://raw.githubusercontent.com/PL728329/API_ML_AI_garbage_sorting/master/%E5%9E%83%E5%9C%BE%E5%88%86%E5%88%86%E7%9C%8B.pptx)
 
 # 价值主张设计
 ## （一）背景
